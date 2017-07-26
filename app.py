@@ -18,4 +18,4 @@ aiohttp_jinja2.setup(app, loader=FileSystemLoader(TEMPLATES_DIR))
 for route in routes:
 	app.router.add_route(*route[1:], name=route[0])
 
-web.run_app(app, host='127.0.0.10', port=80)
+web.run_app(app, host='127.0.0.1', port=80)
