@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chats</title>
+</head>
+<body>
+	<a href="/create_room/">Create Room</a>
+	{% for room in rooms %}
+		<a href="/room/{{ room }}">{{ room }}</a>
+	{% endfor %}
+</body>
+</html>
